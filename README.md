@@ -1,27 +1,68 @@
 # Snake
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.16.
+Uma implementação leve do clássico jogo Snake para navegador, desenvolvida com Angular.
 
-## Development server
+**Projeto:** Jogo simples de Snake que demonstra tratamento de entrada, loops de jogo e layout responsivo.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+**Tecnologias:**
 
-## Code scaffolding
+- Angular (v16+)
+- TypeScript
+- Node.js & npm
+- Angular CLI
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+**Autor:** leandro-freires
 
-## Build
+## Instalação
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Pré-requisitos:
 
-## Running unit tests
+- Node.js (recomendado v16 ou superior)
+- npm (incluído com o Node.js)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Passos:
 
-## Running end-to-end tests
+1. Abra um terminal na pasta do projeto.
+2. Instale as dependências:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```bash
+npm install
+```
 
-## Further help
+3. Inicie o servidor de desenvolvimento:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```bash
+npm start
+```
+
+4. Abra o navegador em `http://localhost:4200/`.
+
+## Build para produção
+
+Para gerar o build de produção:
+
+```bash
+npm run build
+```
+
+Os artefatos serão gerados na pasta `dist/`.
+
+## Testes
+
+Execute os testes unitários (se estiverem configurados):
+
+```bash
+npm test
+```
+
+## Contribuição
+
+Contribuições são bem-vindas — abra issues ou envie pull requests.
+
+## Licença
+
+Este projeto não inclui uma licença explícita. Adicione um arquivo `LICENSE` caso deseje definir uma.
+
+## Changelog
+
+- 2026-05-11: Added minor README improvements.
