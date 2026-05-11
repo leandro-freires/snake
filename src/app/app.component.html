@@ -1,0 +1,25 @@
+<div class="container">
+  <h1>Jogo da Cobrinha 🐍</h1>
+  <div class="painel">
+    <div class="pontuacao">Pontuação: {{ pontuacao }}</div>
+    <button (click)="iniciarJogo()" [disabled]="jogoAtivo">Iniciar</button>
+    <button (click)="pararJogo()" [disabled]="!jogoAtivo">Parar</button>
+  </div>
+  <div class="tabuleiro">
+    <div
+      *ngFor="let y of [].constructor(boardHeight); let j = index"
+      class="linha"
+    >
+      <div
+        *ngFor="let x of [].constructor(boardWidth); let i = index"
+        [ngClass]="obterCelula(i, j)"
+        class="celula"
+      ></div>
+    </div>
+  </div>
+  <div class="mensagem" *ngIf="mensagem">{{ mensagem }}</div>
+  <div class="ajuda">
+    Use as setas ou WASD para mover.<br />
+    Feito com ❤️ em Angular - pt-BR
+  </div>
+</div>
